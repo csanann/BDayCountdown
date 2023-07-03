@@ -1,9 +1,12 @@
 // file: server.js
 
 const express = require('express');
+const path = require('path');
 const { calculateRemainingDays } = require('./src/calculateDays');
 
 const app = express();
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/birthday', (reg, res) => {
   try {
