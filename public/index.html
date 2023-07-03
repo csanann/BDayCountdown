@@ -1,0 +1,24 @@
+<!-- //file: public/index.html -->
+
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Birthday Countdown App</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>Welcome to Birthday Countdown!</h1>
+    <form id="user-form">
+      <label for="name">Name: </label>
+      <input type="text" id="name" name="name" required>
+      <br>
+      <label for="dob">Date of Birth (dd/mm/yyyy): </label>
+      <input type="date" id="dob" name="birthday" required>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+    <p id="error-message"></p>
+    <script src="script.js"></script>
+  </body>
+</html>  
