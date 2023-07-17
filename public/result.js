@@ -3,7 +3,7 @@
 const name = localStorage.getItem('name');
 const dob = localStorage.getItem('dob');
 
-fetch(`/birthday?dob=${dob}`)
+fetch(`/calculate?dob=${dob}`)
 .then(response => response.json())
 .then(data => {
   if (data.error) {
